@@ -1,0 +1,1 @@
+import{_ as n,v as t,y as r,x as s}from"./D7QVEZUM.js";const o={};function a(c,e){return s(),t("div",null,e[0]||(e[0]=[r("h1",null,"Bienvenue sur mon site Nuxt",-1)]))}const u=n(o,[["render",a]]);export{u as default};
