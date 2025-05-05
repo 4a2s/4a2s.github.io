@@ -9,10 +9,6 @@ export default [
         url: '/agenda',
     },
     {
-        name: "Association",
-        url: '/association',
-    },
-    {
         name: 'Prêts',
         url: '/inventaire',
     }
