@@ -1,0 +1,1 @@
+import{D as o}from"./entry.aMp2o0CY.js";const t=()=>o("color-mode").value,e=""+globalThis.__publicAssetsURL("logoFB_white.png"),l=""+globalThis.__publicAssetsURL("logoFB.png");export{e as _,l as a,t as u};
