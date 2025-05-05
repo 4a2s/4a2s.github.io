@@ -23,6 +23,7 @@ jobs:
         env:
           REACT_APP_GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
           URL_EXCEL: ${{ secrets.URL_EXCEL }}
+          BASE_URL: ${{ vars.BASE_URL }}
 
       - name: Generate static site
         run: npm run generate

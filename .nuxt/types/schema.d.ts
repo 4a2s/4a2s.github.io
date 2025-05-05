@@ -172,8 +172,6 @@ declare module 'nuxt/schema' {
    },
   }
   interface PublicRuntimeConfig {
-   STRAPI_URL: string,
-
    BASE_URL: string,
 
    mdc: {

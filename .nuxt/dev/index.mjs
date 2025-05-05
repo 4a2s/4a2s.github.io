@@ -83,7 +83,6 @@ const _inlineRuntimeConfig = {
     }
   },
   "public": {
-    "STRAPI_URL": "",
     "BASE_URL": "",
     "mdc": {
       "components": {
@@ -178,7 +177,7 @@ const _inlineRuntimeConfig = {
       "anchorLinks": false
     },
     "strapi": {
-      "url": "",
+      "url": "http://localhost:1337",
       "prefix": "/api",
       "admin": "/admin",
       "version": "v4",
@@ -268,7 +267,7 @@ const _inlineRuntimeConfig = {
     }
   },
   "strapi": {
-    "url": "",
+    "url": "http://localhost:1337",
     "prefix": "/api",
     "admin": "/admin",
     "version": "v4",

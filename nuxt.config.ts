@@ -11,9 +11,6 @@ export default defineNuxtConfig({
     },
     compressPublicAssets: true,
   },
-  strapi: {
-    url: process.env.NUXT_STRAPI_URL || ''
-  },
   content: {
     markdown: {
       anchorLinks: false,
@@ -22,7 +19,6 @@ export default defineNuxtConfig({
   ssr: true,
   runtimeConfig: {
     public: {
-      STRAPI_URL: process.env.NUXT_STRAPI_URL || '',
       BASE_URL: process.env.BASE_URL || ''
     }
   },
