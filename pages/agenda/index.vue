@@ -24,21 +24,13 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 
-const API_KEY = process.env.REACT_APP_GOOGLE_API_KEY // <-- Remplace par ta clé API
-const CALENDAR_ID = '10bc7f6ed091d6683aae3cead8fc68f1876d78565b61e5ae7069d4e3afd391cf@group.calendar.google.com'
 const events = ref([])
 const loading = ref(true)
 
 const fetchEvents = async () => {
-  const timeMin = new Date().toISOString()
-  const url = `https://www.googleapis.com/calendar/v3/calendars/${encodeURIComponent(
-    CALENDAR_ID
-  )}/events?key=${API_KEY}&timeMin=${timeMin}&singleEvents=true&orderBy=startTime`
-
   try {
-    const res = await fetch(url)
-    const data = await res.json()
-    events.value = data.items || []
+    const res = await fetch('/events.json') // Charger les événements statiques
+    events.value = await res.json()
   } catch (err) {
     console.error('Erreur lors du chargement des événements', err)
   } finally {

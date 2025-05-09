@@ -55,7 +55,7 @@
   <script setup>
   import { ref, computed, onMounted } from 'vue'
   
-  const csvUrl = process.env.URL_EXCEL
+  const csvUrl = 'https://docs.google.com/spreadsheets/d/1jbjMIfJrWoY691Ye_7QGzbqvucMtZEzb/gviz/tq?tqx=out:csv'
   
   const data = ref([])
   const search = ref('')
