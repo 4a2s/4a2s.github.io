@@ -3,9 +3,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "nuxt build",
+    "fetch-events": "node scripts/fetch-events.js",
+    "build": "npm run fetch-events && nuxt build",
     "dev": "nuxt dev",
-    "generate": "nuxt generate",
+    "generate": "npm run fetch-events && nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "serve": "npx serve .output/public",
